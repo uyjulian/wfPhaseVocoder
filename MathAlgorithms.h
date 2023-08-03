@@ -178,6 +178,7 @@ void  InterleaveOverlappingWindow(float * __restrict dest,
 
 //---------------------------------------------------------------------------
 
+#if 0
 #if 0 && defined(_M_IX86)||defined(_M_X64)
 //---------------------------------------------------------------------------
 // 定数など
@@ -579,6 +580,7 @@ void DeinterleaveApplyingWindow_sse(float * __restrict dest[], const float * __r
 void  InterleaveOverlappingWindow_sse(float * __restrict dest, const float * __restrict const * __restrict src,
 					float * __restrict win, int numch, size_t srcofs, size_t len);
 //---------------------------------------------------------------------------
+#endif
 #endif
 
 
